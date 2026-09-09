@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>الحسینی الفقراء فاسٹ فوڈ پوائنٹ اینڈ پکوان سینٹر — سیوہن شریف</title>
+<meta name="description" content="الحسینی الفقراء فاسٹ فوڈ پوائنٹ اینڈ پکوان سینٹر، سیوہن شریف — بریانی، کڑاہی، براسٹ، شوارما، برگر، دیگ آرڈر۔ واٹس ایپ پر آرڈر کریں: 0301-3499537">
+<meta name="theme-color" content="#180C0C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#180C0C;
+  --maroon:#2A1212;
+  --maroon2:#3A1717;
+  --gold:#D9A227;
+  --gold-lite:#F3CE6B;
+  --gold-deep:#8C5E10;
+  --cream:#FBF1DC;
+  --red:#C8262B;
+  --wa:#25D366;
+  --wa-dark:#128C4A;
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Noto Nastaliq Urdu','Outfit',serif;
+  background:
+    radial-gradient(1100px 500px at 50% -10%, #4a2410 0%, transparent 60%),
+    radial-gradient(800px 400px at 90% 30%, rgba(217,162,39,.10) 0%, transparent 60%),
+    radial-gradient(800px 400px at 10% 60%, rgba(200,38,43,.10) 0%, transparent 60%),
+    var(--night);
+  color:var(--cream);
+  line-height:2.1;
+  overflow-x:hidden;
+}
+.en{font-family:'Outfit',sans-serif;line-height:1.4}
+a{color:inherit;text-decoration:none}
+
+/* ---------- top bar ---------- */
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:10px 16px;font-size:13px;
+  background:linear-gradient(90deg,#241010,#3a1717,#241010);
+  border-bottom:1px solid rgba(217,162,39,.35);
+}
+.topbar .en{color:var(--gold-lite);letter-spacing:.5px}
+.topbar a{display:flex;align-items:center;gap:6px;color:var(--cream)}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;text-align:center;
+  padding:56px 18px 40px;
+  perspective:900px;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 45% at 50% 18%, rgba(243,206,107,.16), transparent 70%);
+}
+.crescent{
+  font-size:34px;filter:drop-shadow(0 0 14px rgba(243,206,107,.8));
+  animation:float 5s ease-in-out infinite;display:inline-block;
+}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+h1.title{
+  font-size:clamp(40px, 9vw, 84px);
+  font-weight:700;line-height:2;
+  background:linear-gradient(180deg,#FFE9A8 0%, var(--gold) 45%, #A96F12 80%, #F3CE6B 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 3px 0 rgba(0,0,0,.55)) drop-shadow(0 10px 24px rgba(217,162,39,.35));
+  transform:rotateX(8deg);
+  animation:shine 6s linear infinite;
+  background-size:100% 220%;
+}
+@keyframes shine{0%{background-position:0 0}50%{background-position:0 100%}100%{background-position:0 0}}
+h2.subtitle{
+  font-size:clamp(20px, 4.6vw, 34px);font-weight:600;color:#CFB0FF;
+  text-shadow:0 2px 10px rgba(120,80,220,.5);
+  margin-top:2px;
+}
+.tagline{
+  max-width:640px;margin:14px auto 0;font-size:clamp(15px,3.6vw,19px);color:#F5E4C0;
+}
+.hero-cta{
+  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:13px 26px;border-radius:60px;font-size:17px;font-weight:600;
+  border:none;cursor:pointer;transition:transform .18s ease, box-shadow .18s ease;
+  font-family:inherit;
+}
+.btn:active{transform:translateY(2px) scale(.98)}
+.btn-wa{
+  background:linear-gradient(180deg,#3ee381,var(--wa) 55%,var(--wa-dark));
+  color:#062b16;
+  box-shadow:0 6px 0 #0b5e33, 0 16px 30px rgba(37,211,102,.35);
+}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 9px 0 #0b5e33, 0 22px 40px rgba(37,211,102,.45)}
+.btn-gold{
+  background:linear-gradient(180deg,var(--gold-lite),var(--gold) 55%,var(--gold-deep));
+  color:#2b1a02;
+  box-shadow:0 6px 0 #5d3e08, 0 16px 30px rgba(217,162,39,.35);
+}
+.btn-gold:hover{transform:translateY(-3px)}
+.btn svg{width:22px;height:22px;flex:none}
+
+/* ---------- gold divider ---------- */
+.divider{
+  display:flex;align-items:center;gap:12px;max-width:520px;margin:0 auto;padding:8px 24px;
+}
+.divider::before,.divider::after{
+  content:"";flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.divider span{color:var(--gold);font-size:20px}
+
+/* ---------- sections ---------- */
+section{padding:38px 16px;max-width:1080px;margin:0 auto}
+h3.sec-title{
+  text-align:center;font-size:clamp(26px,6vw,40px);font-weight:700;color:var(--gold-lite);
+  text-shadow:0 2px 0 rgba(0,0,0,.6), 0 8px 22px rgba(217,162,39,.3);
+  margin-bottom:6px;
+}
+p.sec-sub{text-align:center;color:#E8D5AE;font-size:15px;margin-bottom:26px}
+
+/* ---------- menu grid ---------- */
+.grid{
+  display:grid;gap:16px;
+  grid-template-columns:repeat(auto-fill,minmax(158px,1fr));
+}
+.card{
+  position:relative;
+  background:linear-gradient(160deg,#33161680,#1f0e0eC0),
+             linear-gradient(160deg,var(--maroon2),var(--maroon));
+  border:1px solid rgba(217,162,39,.4);
+  border-radius:var(--radius);
+  padding:18px 12px 14px;
+  text-align:center;
+  transform-style:preserve-3d;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s;
+  box-shadow:0 10px 24px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06);
+  will-change:transform;
+}
+.card:hover{border-color:var(--gold-lite)}
+.card .emoji{
+  font-size:44px;display:inline-grid;place-items:center;
+  width:78px;height:78px;border-radius:50%;
+  background:radial-gradient(circle at 30% 25%, #4a2a12, #241004 70%);
+  border:2px solid var(--gold);
+  box-shadow:0 6px 16px rgba(0,0,0,.5), inset 0 2px 6px rgba(243,206,107,.35);
+  transform:translateZ(30px);
+  margin-bottom:6px;
+}
+.card .name{font-size:18px;font-weight:600;color:var(--cream);transform:translateZ(20px)}
+.card .name-en{font-size:11.5px;color:#C9A96A;letter-spacing:.6px;transform:translateZ(20px);margin-top:-4px;margin-bottom:10px}
+.order-mini{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:13.5px;font-weight:600;color:#062b16;
+  background:linear-gradient(180deg,#3ee381,var(--wa) 60%,var(--wa-dark));
+  border:none;border-radius:40px;padding:7px 15px;cursor:pointer;
+  box-shadow:0 4px 0 #0b5e33;
+  transition:transform .15s;font-family:inherit;transform:translateZ(26px);
+}
+.order-mini:active{transform:translateZ(26px) translateY(2px)}
+.order-mini svg{width:15px;height:15px}
+
+/* ---------- services ---------- */
+.services{
+  display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+.svc{
+  background:linear-gradient(160deg,rgba(217,162,39,.14),rgba(217,162,39,.04));
+  border:1px solid rgba(217,162,39,.45);
+  border-radius:var(--radius);
+  padding:20px 16px;text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+.svc .ico{font-size:36px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.5))}
+.svc .t{font-size:20px;font-weight:600;color:var(--gold-lite);margin-top:4px}
+.svc .d{font-size:14px;color:#EBDCBC}
+.deg-note{
+  margin-top:18px;text-align:center;font-size:clamp(15px,3.8vw,18px);
+  background:linear-gradient(90deg,transparent,rgba(200,38,43,.25),transparent);
+  border-block:1px solid rgba(217,162,39,.35);
+  padding:14px 10px;color:#FFE9C4;
+}
+
+/* ---------- contact ---------- */
+.contact-wrap{
+  display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+.person{
+  background:linear-gradient(160deg,var(--maroon2),var(--maroon));
+  border:1px solid rgba(217,162,39,.45);
+  border-radius:var(--radius);
+  padding:22px 18px;text-align:center;
+  box-shadow:0 10px 26px rgba(0,0,0,.45);
+}
+.person .role{font-size:13.5px;color:#C9A96A}
+.person .nm{font-size:22px;font-weight:700;color:var(--cream)}
+.person .ph{font-size:22px;letter-spacing:2px;color:var(--gold-lite);margin:4px 0 12px;direction:ltr}
+.person .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:14px;font-weight:600;padding:9px 18px;border-radius:40px;font-family:inherit;
+  border:none;cursor:pointer;transition:transform .15s;
+}
+.chip:active{transform:translateY(2px)}
+.chip.call{background:linear-gradient(180deg,var(--gold-lite),var(--gold) 60%,var(--gold-deep));color:#2b1a02;box-shadow:0 4px 0 #5d3e08}
+.chip.wa{background:linear-gradient(180deg,#3ee381,var(--wa) 60%,var(--wa-dark));color:#062b16;box-shadow:0 4px 0 #0b5e33}
+.chip svg{width:16px;height:16px}
+
+.address{
+  margin-top:18px;text-align:center;
+  background:linear-gradient(160deg,rgba(217,162,39,.12),rgba(217,162,39,.03));
+  border:1px dashed rgba(217,162,39,.55);
+  border-radius:var(--radius);
+  padding:20px 16px;
+}
+.address .a-ur{font-size:19px;font-weight:600;color:var(--cream)}
+.address .a-en{font-size:14px;color:#C9A96A;margin:2px 0 12px}
+
+/* ---------- footer ---------- */
+footer{
+  text-align:center;padding:26px 16px 110px;
+  border-top:1px solid rgba(217,162,39,.3);
+  background:linear-gradient(180deg,transparent,#120808);
+  font-size:14px;color:#B99B63;
+}
+
+/* ---------- floating whatsapp ---------- */
+.fab{
+  position:fixed;bottom:20px;left:20px;z-index:50;
+  width:62px;height:62px;border-radius:50%;
+  display:grid;place-items:center;
+  background:linear-gradient(180deg,#3ee381,var(--wa) 55%,var(--wa-dark));
+  box-shadow:0 8px 24px rgba(37,211,102,.5), 0 4px 0 #0b5e33;
+  animation:pulse 2.4s ease-in-out infinite;
+}
+.fab svg{width:34px;height:34px;fill:#fff}
+@keyframes pulse{
+  0%,100%{box-shadow:0 8px 24px rgba(37,211,102,.5),0 4px 0 #0b5e33, 0 0 0 0 rgba(37,211,102,.45)}
+  50%{box-shadow:0 8px 24px rgba(37,211,102,.5),0 4px 0 #0b5e33, 0 0 0 16px rgba(37,211,102,0)}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+@media (max-width:420px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  body{line-height:2}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>پروپرائٹر: صفدر علی کوکر</span>
+  <a href="tel:03013499537" class="en">📞 0301-3499537</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <span class="crescent">🌙</span>
+  <h1 class="title">الحسینی الفقراء</h1>
+  <h2 class="subtitle">فاسٹ فوڈ پوائنٹ اینڈ پکوان سینٹر</h2>
+  <p class="tagline">شادی، پارٹی، سالگرہ ۽ ہر خوشیءَ جي موقعي تي اعليٰ قسم جو طعام — آرڈر تي تيار ٿي ملندو</p>
+  <div class="hero-cta">
+    <button class="btn btn-wa" onclick="orderWA()">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.83 14.07c-.25.7-1.44 1.33-2.02 1.42-.52.08-1.18.11-1.9-.12-.44-.14-1-.33-1.72-.64-3.03-1.31-5-4.36-5.16-4.56-.15-.2-1.23-1.63-1.23-3.11 0-1.48.78-2.21 1.05-2.51.28-.3.6-.38.8-.38h.58c.18 0 .43-.07.67.51.25.6.85 2.08.92 2.23.08.15.13.33.03.53-.42.86-.88.83-.65 1.22.85 1.46 1.7 1.97 2.99 2.61.22.11.35.09.48-.05.13-.15.55-.64.7-.86.15-.22.3-.18.5-.11.2.08 1.28.6 1.5.71.22.11.37.17.42.26.06.1.06.55-.19 1.25z"/></svg>
+      واٹس ایپ پر آرڈر کریں
+    </button>
+    <a class="btn btn-gold" href="#menu">🍽️ مینیو دیکھیں</a>
+  </div>
+</header>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- MENU -->
+<section id="menu">
+  <h3 class="sec-title">ہمارا مینیو</h3>
+  <p class="sec-sub">کسی بھی ڈش پر «آرڈر» دبائیں — سیدھا واٹس ایپ پر آرڈر چلا جائے گا</p>
+  <div class="grid" id="menuGrid"></div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <h3 class="sec-title">پکوان سروسز</h3>
+  <p class="sec-sub">ہر خوشی کے موقع پر دیگ اور کیٹرنگ کا خاص انتظام</p>
+  <div class="services">
+    <div class="svc"><div class="ico">💍</div><div class="t">شادی</div><div class="d">شادی ۽ ولیمے جي دیگن جو مڪمل آرڈر</div></div>
+    <div class="svc"><div class="ico">🎉</div><div class="t">پارٹی</div><div class="d">گھر ۽ دفتر جي پارٽين لاءِ تازو کاڌو</div></div>
+    <div class="svc"><div class="ico">🎂</div><div class="t">سالگرہ</div><div class="d">سالگرہ جي فنڪشن لاءِ خاص مینیو</div></div>
+    <div class="svc"><div class="ico">🕌</div><div class="t">مجالس ۽ نیاز</div><div class="d">مجلس، نیاز ۽ خاص موقعن جو اہتمام</div></div>
+  </div>
+  <div class="deg-note">🍲 دیگ آرڈر: بریانی • قورمہ • حلیم — خاص موقعن تي اعليٰ قسم جو طعام آرڈر تي تيار ٿي ملندو</div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h3 class="sec-title">رابطہ کریں</h3>
+  <p class="sec-sub">کال یا واٹس ایپ — دونوں نمبر حاضر ہیں</p>
+  <div class="contact-wrap">
+    <div class="person">
+      <div class="role">پروپرائٹر</div>
+      <div class="nm">صفدر علی کوکر</div>
+      <div class="ph en">0301-3499537</div>
+      <div class="row">
+        <a class="chip call" href="tel:+923013499537"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>کال کریں</a>
+        <button class="chip wa" onclick="waTo('923013499537')"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>واٹس ایپ</button>
+      </div>
+    </div>
+    <div class="person">
+      <div class="role">انچارج</div>
+      <div class="nm">استاد فرحان علی قریشی</div>
+      <div class="ph en">0302-3652821</div>
+      <div class="row">
+        <a class="chip call" href="tel:+923023652821"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>کال کریں</a>
+        <button class="chip wa" onclick="waTo('923023652821')"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>واٹس ایپ</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="address">
+    <div class="a-ur">📍 لڳ محمدی میڈیکل اسٹور، سیوہن شریف</div>
+    <div class="a-en">Near Muhammadi Medical Store — CVH8+X72, Sehwan Sharif, Sindh, Pakistan</div>
+    <a class="chip call" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=CVH8%2BX72%20Sehwan%20Pakistan">🗺️ گوگل میپ پر دیکھیں</a>
+  </div>
+</section>
+
+<footer>
+  <div>الحسینی الفقراء فاسٹ فوڈ پوائنٹ اینڈ پکوان سینٹر — سیوہن شریف</div>
+  <div class="en" style="margin-top:4px">© 2026 Al-Husaini Al-Fuqara Fast Food Point &amp; Pakwan Center</div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="fab" href="#" onclick="orderWA();return false" aria-label="WhatsApp order">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.83 14.07c-.25.7-1.44 1.33-2.02 1.42-.52.08-1.18.11-1.9-.12-.44-.14-1-.33-1.72-.64-3.03-1.31-5-4.36-5.16-4.56-.15-.2-1.23-1.63-1.23-3.11 0-1.48.78-2.21 1.05-2.51.28-.3.6-.38.8-.38h.58c.18 0 .43-.07.67.51.25.6.85 2.08.92 2.23.08.15.13.33.03.53-.42.86-.88.83-.65 1.22.85 1.46 1.7 1.97 2.99 2.61.22.11.35.09.48-.05.13-.15.55-.64.7-.86.15-.22.3-.18.5-.11.2.08 1.28.6 1.5.71.22.11.37.17.42.26.06.1.06.55-.19 1.25z"/></svg>
+</a>
+
+<script>
+const WA_MAIN = "923013499537";
+
+const MENU = [
+  {e:"🍛", ur:"چکن بریانی",     en:"Chicken Biryani"},
+  {e:"🥘", ur:"چکن کڑاہی",     en:"Chicken Karahi"},
+  {e:"🍲", ur:"حلیم",           en:"Haleem"},
+  {e:"🥗", ur:"چنا چاٹ",        en:"Chana Chaat"},
+  {e:"🍖", ur:"ملائی کوفتہ",    en:"Malai Kofta"},
+  {e:"🥣", ur:"سفید ہانڈی",     en:"White Handi"},
+  {e:"🍗", ur:"فرائیڈ براسٹ",   en:"Fried Broast"},
+  {e:"🌯", ur:"شوارما",         en:"Shawarma"},
+  {e:"🍔", ur:"زنگر برگر",      en:"Zinger Burger"},
+  {e:"🍟", ur:"فرنچ فرائز",     en:"French Fries"},
+  {e:"🍢", ur:"سیخ کباب",       en:"Seekh Kabab"},
+  {e:"🔥", ur:"چکن تکہ",        en:"Chicken Tikka"},
+  {e:"🍖", ur:"تکہ بوٹی",       en:"Tikka Boti"},
+  {e:"🍗", ur:"بار بی کیو چکن", en:"BBQ Chicken"},
+  {e:"🫓", ur:"تازہ روٹی",      en:"Fresh Roti"},
+  {e:"☕", ur:"چائے",           en:"Chai"},
+  {e:"🍲", ur:"دیگ آرڈر",       en:"Deg Order"},
+];
+
+const grid = document.getElementById("menuGrid");
+MENU.forEach(m=>{
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML = `
+    <span class="emoji">${m.e}</span>
+    <div class="name">${m.ur}</div>
+    <div class="name-en en">${m.en}</div>
+    <button class="order-mini">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>
+      آرڈر کریں
+    </button>`;
+  card.querySelector(".order-mini").addEventListener("click", ()=>orderWA(m.ur+" ("+m.en+")"));
+  grid.appendChild(card);
+
+  /* 3D tilt (desktop pointer) */
+  card.addEventListener("pointermove", ev=>{
+    if(ev.pointerType!=="mouse") return;
+    const r = card.getBoundingClientRect();
+    const x = (ev.clientX - r.left)/r.width - .5;
+    const y = (ev.clientY - r.top)/r.height - .5;
+    card.style.transform = `rotateY(${x*12}deg) rotateX(${ -y*12}deg) translateY(-4px)`;
+  });
+  card.addEventListener("pointerleave", ()=>{ card.style.transform=""; });
+});
+
+function orderWA(item){
+  let msg = "السلام علیکم! الحسینی الفقراء فاسٹ فوڈ پوائنٹ — میں آرڈر کرنا چاہتا ہوں";
+  if(item) msg += ":\n🍽️ " + item;
+  msg += "\n\nنام:\nپتہ:\nتعداد:";
+  waTo(WA_MAIN, msg);
+}
+function waTo(num, msg){
+  const url = "https://wa.me/" + num + (msg ? "?text=" + encodeURIComponent(msg) : "");
+  window.open(url, "_blank");
+}
+</script>
+</body>
+</html>
